@@ -17,9 +17,26 @@
     margin-bottom: 0;
     float: left;
 
+    // for icon on left
+    display: inline-block;
+    position: relative;
+    padding-left: $logo-width;
+
     &,
     &:visited {
         color: $grey-color-dark;
+    }
+
+    &:after {
+        content: '';
+        background: url(../media/logo.jpg) no-repeat center center;
+        background-size: 85%;
+        width: $logo-width;
+        height: $logo-height;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 
