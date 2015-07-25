@@ -6,7 +6,7 @@ layout: default
 <div id="sliderFrame">
     <div id="slider">
         {% for image in page.gallery %}
-        <img src="{{ image.url | prepend: site.baseurl | prepend: '/media/'}}" {% if image.alt %}alt="{{image.alt}}"{% endif %}/>
+        <img src="{{ image.url | prepend: '/media/' | prepend: site.baseurl }}" {% if image.alt %}alt="{{image.alt}}"{% endif %}/>
         {% endfor %}
     </div>
 </div>
