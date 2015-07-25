@@ -1,6 +1,18 @@
 ---
 layout: default
 ---
+
+{% if page.gallery %}
+<div id="sliderFrame">
+    <div id="slider">
+        {% for image in page.gallery %}
+        <img src="{{ image | prepend: site.baseurl | prepend: '/media/'}}" alt="{{image}}"/>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+
 <div class="page-content">
     <div class="wrapper">
 

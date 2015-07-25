@@ -15,7 +15,7 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #d8964c;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -31,7 +31,8 @@ $on-laptop:        800px;
 $logo-width: (100px / $base-font-size) + rem;
 $logo-height: (56px / $base-font-size) + rem;
 
-
+// slider
+$slider-height: (400px / $base-font-size) + rem;
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -50,7 +51,8 @@ $logo-height: (56px / $base-font-size) + rem;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+  "base",
+  "layout",
+  "syntax-highlighting",
+  "js-image-slider"
 ;
